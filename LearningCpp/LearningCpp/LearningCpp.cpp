@@ -6,6 +6,7 @@
 #include <iostream>
 #include <cstring>
 #include "Box.h"
+#include <vector>
 #include "Student.h"
 
 using namespace std;
@@ -239,6 +240,48 @@ int main()
 
 
 
+/*
+int main()
+{
+	cout << "Come up and c++ me some time.";
+	cout << endl;
+	cout << "You won't regret it!" << endl;
+	cin.get();
+	return 0;
+}
+*/
+
+
+/*
+//learning vector
+int main()
+{
+	vector<int> test;
+	test.push_back(1);
+	test.push_back(2);
+	for (int i = 0; i < test.size(); i++)
+	{
+		cout << test[i] << endl;
+	}
+	cin.get();
+}
+*/
+
+
+/*
+//declare and assign variable
+int main()
+{
+	int carrots = 25;
+	cout << "I have ";
+	cout << carrots;
+	cout << " carrots" << endl;
+	carrots = carrots - 1;
+	cout << "crunch crunch. Now I have " << carrots << " carrots" << endl;
+	cin.get();
+	return 0;
+}
+*/
 
 
 
