@@ -1,6 +1,7 @@
 // LearningCpp.cpp : Defines the entry point for the console application.
 //
 
+/*
 #include "stdafx.h"
 #include "LearningCpp.h"
 #include <iostream>
@@ -10,6 +11,9 @@
 #include "Student.h"
 
 using namespace std;
+*/
+
+
 
 
 /*  //hello c++
@@ -335,6 +339,181 @@ int main()
 double StoneToPounds(double n)
 {
 	return n * 14;
+}
+*/
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main()
+{
+	int n_int = INT_MAX;
+	int n_short = SHRT_MAX;
+	int n_long = LONG_MAX;
+
+	cout << "int is " << sizeof(n_int) << "bytes." << endl;
+	cout << "short is " << sizeof(n_short) << "bytes." << endl;
+	cout << "long is " << sizeof(n_long) << "bytes." << endl;
+
+	cout << "Maximum values:" << endl;
+	cout << "int: " << n_int << endl;
+	cout << "short: " << n_short << endl;
+	cout << "long :" << n_long << endl;
+
+	cout << "Minium int value = " << INT_MIN << endl;
+	cout << "Bits per byte = " << CHAR_BIT << endl;
+	return 0;
+}
+*/
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+#include <climits>
+#define ZERO 0
+
+using namespace std;
+
+int main()
+{
+	short sam = SHRT_MAX;
+	unsigned short sue = sam;
+
+	cout << "Sam has " << sam << " dollars and Sue has " << sue << "dollars" << endl << "Add $1 to each account." << endl;
+
+	sam = sam + 1;
+	sue += 1;
+	cout << "Now Sam has " << sam << " dollars and Sue has " << sue << "dollars" << endl;
+
+	sam = ZERO;
+	sue = ZERO;
+	cout << "Now Sam has " << sam << " dollars and Sue has " << sue << "dollars" << endl<<"Take $1 from each account." << endl;
+
+	sam -= 1;
+	sue -= 1;
+	cout << "Now Sam has " << sam << " dollars and Sue has " << sue << "dollars" << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	int chest = 42;
+	int waist = 0x42;
+	int inseam = 042;
+
+	cout << "Monsieur cuts a striking figure! \n";
+	cout << "Chest = " << chest << endl;
+	cout << "waist = " << waist << endl;
+	cout << "inseam = " << inseam << endl;
+
+	return 0;
+}
+*/
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int chest = 42;
+	int waist = 42;
+	int inseam = 42;
+
+	cout << "Monsieur cuts a striking figure! \n";
+	cout << dec;
+	cout << "chest = " << chest << endl;
+	cout << hex;
+	cout << "inseam = " << inseam << endl;
+	cout << oct;
+	cout << "waist " << waist << endl;
+	return 0;
+}
+*/
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	cout << "Enter a character" << endl;
+	cin >> ch;
+	cout << "Hollam! Thank you for the " << ch << " character" << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	char ch = 'M';
+	int i = ch;
+	cout << "The ASCII code for " << ch << " is " << i << endl;
+
+	ch = ch + 1;
+	i = ch;
+	cout << "The ASCII code for " << ch << " is " << i << endl;
+
+	cout << "Displaying char ch using cout.put(ch): ";
+	cout.put(ch);
+	cout.put('!');
+	cout <<endl<< "Done" << endl;
+	return 0;
+
+}
+*/
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "\aOperation \"HyperHype\" is now activated! \n";
+	cout << "Enter your agent code: _______\b\b\b\b\b\b\b\b";
+	long code;
+	cin >> code;
+	cout << "\aYou entered " << code << "...\n";
+	cout << "\aCode verified! Proceed with Plan Z3! \n";
+	return 0;
 }
 */
 
