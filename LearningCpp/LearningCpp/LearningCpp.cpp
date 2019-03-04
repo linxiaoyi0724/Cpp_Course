@@ -284,5 +284,61 @@ int main()
 */
 
 
+/*  //getinfo
+int main()
+{
+	int corrots;
+	cout << "How many carrots do you have??"<<endl;
+	cin >> corrots;
+	cout << "Here are two more."<<endl;
+	corrots += 2;
+	cout << "now you have " << corrots << " carrots" << endl;
+	return 0;
+}
+*/
+
+
+
+/*  // ourfun
+void simon(int);
+int main()
+{
+	simon(3);
+	cout << "Pick an integer: " << endl;
+	int times;
+	cin >> times;
+	simon(times);
+	return 0;
+}
+
+void simon(int n)
+{
+	cout << "simon says touch his toe " << n << " times " << endl;
+}
+*/
+
+
+
+/*
+// Converts stone to pounds
+double StoneToPounds(double);
+int main()
+{
+	cout << "Enter the weight in stone"<<endl;
+	double stone;
+	cin >> stone;
+	double pounds = StoneToPounds(stone);
+	cout << stone << " stone = " << pounds << " pounds. " << endl;
+	return 0;
+}
+
+double StoneToPounds(double n)
+{
+	return n * 14;
+}
+*/
+
+
+
 
 
