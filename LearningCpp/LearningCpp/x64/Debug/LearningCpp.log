@@ -1,3 +1,4 @@
 ﻿  LearningCpp.cpp
+d:\vs2015_code\cpluspluslearning\cpp_course\learningcpp\learningcpp\learningcpp.cpp(632): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   LearningCpp.vcxproj -> D:\vs2015_code\CplusplusLearning\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.exe
   LearningCpp.vcxproj -> D:\vs2015_code\CplusplusLearning\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.pdb (Full PDB)

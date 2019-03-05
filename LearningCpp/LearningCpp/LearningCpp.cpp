@@ -520,4 +520,123 @@ int main()
 
 
 
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout.setf(ios::fixed, ios::floatfield);
+	float tub = 10.0 / 3.0;
+	double mint = 10.0 / 3.0;
+	const float million = 1.0e6;
+	cout << "tub = " << tub << endl;
+	cout << "a million tub = " <<million * tub << endl;
+	cout << "mint = " << mint << endl;
+	cout << "a million mint = " <<million * mint << endl;
+	return 0;
+}
+*/
 
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	float a = 2.34E+22f;
+	float b = a + 1.0f;
+	cout << "a = " << a << endl;
+	cout << "b - a = " << b - a << endl;
+	return 0;
+}
+*/
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float num1, num2;
+	cout.setf(ios_base::fixed, ios_base::floatfield);
+	cout << "Enter a number: ";
+	cin >> num1;
+	cout << "Enter another number:";
+	cin >> num2;
+
+	cout << "num1 = " << num1 << endl;
+	cout << "num2 = " << num2 << endl;
+	cout << "num1 + num2 = " << num1 + num2 << endl;
+	cout << "num1 - num2 = " << num1 - num2 << endl;
+	cout << "num1 * num2 = " << num1 * num2 << endl;
+	cout << "num1 / num2 = " << num1 / num2 << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout.setf(ios_base::fixed, ios_base::floatfield);
+	cout << "Integer division: 9/5 = " << 9 / 5 << endl;
+	cout << "Float-point division: 9.0 / 5.0 = " << 9.0 / 5.0 << endl;
+	cout << "Mixed division: 9.0/5 = " << 9.0 / 5 << endl;
+	cout << "double constants: 1e7f/9.0f= " << 1e7f / 9.0f << endl;
+	return 0;
+}
+*/
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	const int lbsPerStone = 14;
+	int lbs;
+	cout << "Enter your weight in pounds: ";
+	cin >> lbs;
+	int stone = lbs / lbsPerStone;
+	int pounds = lbs % lbsPerStone;
+	cout << lbs << " pound = " << stone << " stone + " << pounds << " pounds" << endl;
+	return 0;
+}
+*/
+
+
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	int auks, bats, coots;
+	auks = 11.99 + 19.99;
+	bats = (int) 11.99 + (int)19.99;
+	coots = int(11.99) + int(19.99);
+	cout << "auks = " << auks << endl;
+	cout << "bats = " << bats << endl;
+	cout << "coots = " << coots << endl;
+
+	char ch = 'Z';
+	cout << "the code for " << ch << " is " << int(ch) << endl;
+	return 0;
+}
