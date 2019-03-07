@@ -1,8 +1,9 @@
 // LearningCpp.cpp : Defines the entry point for the console application.
 //
 
-/*
+
 #include "stdafx.h"
+/*
 #include "LearningCpp.h"
 #include <iostream>
 #include <cstring>
@@ -622,7 +623,7 @@ int main()
 */
 
 
-
+/*
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -640,3 +641,4 @@ int main()
 	cout << "the code for " << ch << " is " << int(ch) << endl;
 	return 0;
 }
+*/
