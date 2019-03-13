@@ -273,3 +273,87 @@ int main()
 	return 0;
 }
 */
+
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+struct inflatable
+{
+	char name[20];
+	float volume;
+	double price;
+};
+
+int main()
+{
+	inflatable guest = {
+		"xiaoyi",
+		1.88,
+		29.99
+	};
+
+	inflatable pal = {
+		"xiaoke",
+		1.78,
+		25.99
+	};
+
+	cout << "Expand your guest list with" << guest.name << " and " << pal.name << endl;
+	cout << "you have both for $ " << guest.price + pal.price << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+struct  inflatable
+{
+	char name[20];
+	float volume;
+	double price;
+};
+
+int main()
+{
+	inflatable bouquet = { "xiaoyi", 1.88, 29.99 };
+	cout << "bouquet: " << bouquet.name << " for $ " << bouquet.price << endl;
+	inflatable choice = bouquet;
+	cout << "choice: " << choice.name << " for $ " << choice.price << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+struct inflatable
+{
+	char name[20];
+	float volume;
+	double price;
+};
+
+int main()
+{
+	inflatable guest[2] = { {"xiaoyi", 1.88, 29.99}, {"xiaoke", 1.78,25.99} };
+	cout << "The guests " << guest[0].name << " and " << guest[1].name << " have a combined volume of " << guest[0].volume + guest[1].volume << endl;
+	return 0;
+
+}
