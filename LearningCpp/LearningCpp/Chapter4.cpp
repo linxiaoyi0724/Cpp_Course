@@ -340,6 +340,7 @@ int main()
 
 
 
+/*
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -357,3 +358,285 @@ int main()
 	return 0;
 
 }
+*/
+
+
+
+
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	int donuts = 6;
+	double cups = 4.5;
+	cout << "donuts value: " << donuts << endl << "donuts address: " << &donuts << endl;
+	cout << "cups values: " << cups << endl << "cups address: " << &cups << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	int updates = 6;
+	int* p_updates;
+	p_updates = &updates;
+
+	cout << "Values: updates = " << updates << endl;
+	cout << "*p_updates = " << *p_updates << endl;
+
+	cout << "Addresses: &updates = " << &updates << endl;
+	cout << "p_updates = " << p_updates << endl;
+
+	*p_updates = *p_updates + 1;
+	cout << "Now updates = " << updates << endl;
+	cout << "Now updates = " << *p_updates << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	int higgen = 5;
+	int* pt = &higgen;
+	cout << "higgen value is " << higgen << "    " << "higgen addresss is " << &higgen << endl;
+	cout << "pt value is " << *pt << "   " << " pt address " << pt << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout.setf(ios_base::floatfield, ios_base::fixed);
+	int* pt = new int;
+	*pt = 1001;
+	cout << "int - value: " << *pt << " :location = " << pt << endl;
+
+	double* pd = new double;
+	*pd = 1000001.01;
+	cout << "double - value: " << *pd << " :location = " << pd << endl;
+
+	cout << "sizeof pt " << sizeof(pt) << endl;
+	cout << "size of *pt " << sizeof(*pt) << endl;
+
+	cout << "sizeof pd " << sizeof(pd) << endl;
+	cout << "size of *pd " << sizeof(*pd) << endl;
+
+	return 0;
+}
+*/
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	double* p3 = new double[3];
+	p3[0] = 0.1;
+	p3[1] = 0.5;
+	p3[2] = 0.8;
+	cout << "p3[1]: " << p3[1] << endl;
+	p3 = p3 + 1;
+	cout << "now p3[0]: " << p3[0] << endl;
+	cout << "now p3[1]: " << p3[1] << endl;
+	p3 = p3 - 1;
+	delete[] p3;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	double wages[3] = { 1000.0, 2000.0,3000.0 };
+	short stacks[3] = { 3,2,1 };
+
+	double* pw = wages;
+	short* ps = &stacks[0];
+
+	cout << "pw = " << pw << ", *pw = " << *pw << endl;
+	pw = pw + 1;
+	cout << "pw = " << pw << ", *pw = " << *pw << endl;
+
+	cout << "ps = " << ps << ", *ps = " << *ps << endl;
+	ps = ps + 1;
+	cout << "ps = " << ps << ", *ps = " << *ps << endl;
+
+	cout << "access two elements with array notation \n";
+	cout << "stacks[0]" << stacks[0] << " , stacks[1] " << stacks[1] << endl;
+
+	cout << "access two element with pointer notation \n";
+	cout << "*stacks = " << *stacks << " , *(stacks+1) " << *(stacks + 1) << endl;
+
+	cout << sizeof(wages) << " = size of wages array\n";
+	cout << sizeof(pw) << " = size of pw pointer \n";
+
+	return 0;
+}
+*/
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main()
+{
+	char animal[20] = "bear";
+	const char* bird = "wren";
+	char* pc;
+
+	cout << animal << " and " << bird << endl;
+
+	cout << "Enter a kind of animal: ";
+	cin >> animal;
+
+	pc = animal;
+	cout << pc << "s!" << endl;
+	cout << "Before using strcpy():\n";
+	cout << animal << " at " << (int*)animal << endl;
+	cout << pc << " at " << (int*)pc << endl;
+
+	pc = new char[strlen(animal) + 1];
+	strcpy(pc, animal);
+	cout << "After using strcpy():\n";
+	cout << animal << " at " << (int*)animal << endl;
+	cout << pc << " at " << (int*)pc << endl;
+	delete[] pc;
+	return 0;
+}
+
+*/
+
+
+
+
+/*
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+struct  inflatable
+{
+	char name[20];
+	float volume;
+	double price;
+};
+
+int main()
+{
+	inflatable* ps = new inflatable;
+	cout << "Enter your name of inflatable";
+	cin.get(ps->name, 20);
+	cout << "Enter your volume";
+	cin >> (*ps).volume;
+	cout << "Enter your price";
+	cin >> ps->price;
+
+	cout << "Name: " << (*ps).name << endl;
+	cout << "Volume: " << ps->volume << endl;
+	cout << "Price: $" << ps->price << endl;
+	delete ps;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
