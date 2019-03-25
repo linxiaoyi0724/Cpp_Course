@@ -1,2 +1,3 @@
 ﻿  Chapter4.cpp
-d:\vs2015_code\cpluspluslearning\cpp_course\learningcpp\learningcpp\chapter4.cpp(629): error C2660: 'strcpy_s': function does not take 2 arguments
+  LearningCpp.vcxproj -> D:\vs2015_code\CplusplusLearning\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.exe
+  LearningCpp.vcxproj -> D:\vs2015_code\CplusplusLearning\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.pdb (Full PDB)

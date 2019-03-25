@@ -599,6 +599,8 @@ int main()
 
 
 
+
+/*
 #include "stdafx.h"
 #include <iostream>
 #include <cstring>
@@ -626,9 +628,83 @@ char* GetName()
 	cout << "Enter your name: " << endl;
 	cin >> temp;
 	char* pn = new char[strlen(temp) + 1];
-    strcpy_s(pn, temp);
+    strcpy(pn, temp);
 	return pn;
 }
+*/
+
+
+
+/*
+1. char actor[30]
+2. short betsie[100]
+3. float chuck[13]
+4. long double dipsea[64]
+
+2. int a[5] = { 1,3,5,7,9 };
+3. int even = a[0] + a[4];
+4. cout << ideas[1] << endl;
+5 char ch[100] = "cheeseburger";
+
+6. struct fish
+{
+	char variety[100];
+	int weight;
+	double length;
+};
+
+7. fish fh = {
+	"caoyu",
+	10,
+	18
+}
+
+8. enum Response = { No:0, Yes : 1,Maybe : 2 };
+9. double* ted = new double;
+cout << *ted << endl;
+
+10. float* ps = treacle;
+cout << ps[0] << endl;
+cout << ps[9] << endl;
+
+
+
+// 11.
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << " Enter an integer:  ";
+	int n;
+	cin >> n;
+	int* pn = new int[n];
+
+}
+
+12. “ª∂—µÿ÷∑
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
