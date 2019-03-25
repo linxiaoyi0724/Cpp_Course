@@ -225,7 +225,7 @@ int main()
 	string str2 = "panther";
 
 	str1 = str2;
-	strcpy_s(charr1, charr2);
+	strcpy_s(charr1, charr2
 
 	str1 += " paste";
 	strcat_s(charr1, " juice");
@@ -599,6 +599,36 @@ int main()
 
 
 
+#include "stdafx.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+char* GetName(void);
+
+int main()
+{
+	char* name;
+	name = GetName();
+	cout << name << " at " << (int*)name << endl;
+	delete[] name;
+
+	name = GetName();
+	cout << name << " at " << (int*)name << endl;
+	delete[] name;
+
+	return 0;
+
+}
+
+char* GetName()
+{
+	char temp[100];
+	cout << "Enter your name: " << endl;
+	cin >> temp;
+	char* pn = new char[strlen(temp) + 1];
+    strcpy_s(pn, temp);
+	return pn;
+}
 
 
 
