@@ -1,0 +1,154 @@
+#include "stdafx.h"
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+for (int i = 0; i < 5; i++)
+{
+cout << "C++ Knows loop." << endl;
+}
+cout << "C++ knows when to stop." << endl;
+return 0;
+}
+*/
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+cout << "Enter the starting countdown value: ";
+int value;
+cin >> value;
+int i;
+for (i = value; i > 0; i--)
+{
+cout << "i = " << i << endl;
+}
+cout << "Done now that i = " << i << endl;
+return 0;
+}
+*/
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+int x;
+cout << "The expression x =100 has the value " << (x = 100) << endl;
+cout << "Now x = " << x << endl;
+cout << "The expression x < 3 has the value " << (x < 3) << endl;
+cout << "The expression x > 3 has the value " << (x > 3) << endl;
+cout.setf(ios_base::boolalpha);
+cout << "The expression x < 3 has the value " << (x < 3) << endl;
+cout << "The expression x > 3 has the value " << (x > 3) << endl;
+return 0;
+}
+*/
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	const int ArSize = 15;
+	cout.setf(ios_base::fixed, ios_base::floatfield);
+	double Factorials[ArSize];
+	Factorials[0] = 1;
+	Factorials[1] = 1;
+	for (int i = 2; i <= ArSize; i++)
+	{
+		Factorials[i] = i * Factorials[i - 1];
+	}
+	for (int j = 0; j <= ArSize; j++)
+	{
+		cout << j << "! = " << Factorials[j] << endl;
+	}
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Enter an integer: ";
+	int by;
+	cin >> by;
+	cout << "Counting by" << by << endl;
+	for (int i = 0; i < 100; i = i + 17)
+	{
+		cout << i << endl;
+	}
+	return 0;
+}
+
+*/
+
+
+
+
+
+/*
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	cout << "Enter a word: ";
+	string word;
+	cin >> word;
+	for (int i = word.size()-1; i >= 0; i--)
+	{
+		cout << word[i];
+	}
+	cout << endl << "Bye." << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a = 20;
+	int b = 20;
+	cout << "a = " << a << "   b = " << b << endl;
+	cout << "a++ = " << a++ << "    ++b = " << ++b << endl;
+	cout << "a = " << a << "   b = " << b << endl;
+	return 0;
+}
+*/
+
+
