@@ -152,3 +152,65 @@ int main()
 */
 
 
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "The Amazing Accounto will sum and average: ";
+	cout << "five numbers for you.\n";
+	cout << "please enter five values : \n";
+	double number;
+	double sum = 0;
+	for (int i = 1 ; i <= 5; ++i)
+	{
+		cout << "Value " << i << ":   ";
+		cin >> number;
+		sum += number;
+	}
+
+	cout << "Five exquisite choices indeed! ";
+	cout << "The sum to " << sum << endl;
+	cout << "The average to " << sum / 5 << endl;
+	cout << "The amazing accounto bids you adieu!" << endl;
+	return 0;
+}
+
+*/
+
+
+
+
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	cout << "Enter a word: ";
+	string word;
+	cin >> word;
+	cout << word << endl;
+	for (int i = 0, j = word.size()-1; i < j; i++, j--)
+	{
+		char temp = word[i];
+		word[i] = word[j];
+		word[j] = temp;
+	}
+	cout << word << endl;
+	cout << "Done" << endl;
+	cout << "xiaoyi at company" << endl;
+	return 0;
+}
+
+
+
+
+
+
+

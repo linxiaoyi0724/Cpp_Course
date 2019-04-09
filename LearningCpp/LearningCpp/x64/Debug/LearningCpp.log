@@ -1,3 +1,4 @@
 ﻿  Chapter5.cpp
-  LearningCpp.vcxproj -> D:\vs2015_code\CplusplusLearning\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.exe
-  LearningCpp.vcxproj -> D:\vs2015_code\CplusplusLearning\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.pdb (Full PDB)
+d:\learnprogramminglanguage\cppgit\cpp_course\learningcpp\learningcpp\chapter5.cpp(199): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  LearningCpp.vcxproj -> D:\LearnProgrammingLanguage\CppGit\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.exe
+  LearningCpp.vcxproj -> D:\LearnProgrammingLanguage\CppGit\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.pdb (Full PDB)
