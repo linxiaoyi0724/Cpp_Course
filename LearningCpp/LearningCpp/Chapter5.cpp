@@ -186,7 +186,7 @@ int main()
 
 
 
-
+/*
 #include <iostream>
 #include <string>
 using namespace std;
@@ -207,10 +207,95 @@ int main()
 	cout << "xiaoyi at company" << endl;
 	return 0;
 }
+*/
 
 
 
 
 
+
+
+/*
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main()
+{
+	char word[5] = "?ate";
+	for (char ch = 'a'; strcmp(word, "mate"); ++ch)
+	{
+		cout << word << endl;
+		word[0] = ch;
+	}
+	cout << "After loop ends, word is " << word <<endl;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	string word = "?ate";
+	for (char ch = 'a'; word != "mate"; ++ch)
+	{
+		cout << word << endl;
+		word[0] = ch;
+	}
+	cout << "After loop ends, word is " << word << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	const int ArSize = 20;
+	char name[ArSize];
+	cout << "Your first name, please: ";
+	cin >> name;
+	cout << "Here is your name, verticalized and ASCIIized:"<<endl;
+	int i = 0;
+	while (name[i])
+	{
+		cout << name[i] << ":   " << int(name[i]) << endl;
+		i++;
+	}
+	return 0;
+}
+*/
+
+
+
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	cout << "Enter the delay time in seconds:";
+	float seconds;
+	cin >> seconds;
+	clock_t delay = seconds * CLOCKS_PER_SEC;
+	cout << "Starting" << endl;
+	clock_t start = clock();
+	while (clock() - start < delay)
+	{
+		;
+	}
+	cout << "Done!" << endl;
+	return 0;
+}
 
 
