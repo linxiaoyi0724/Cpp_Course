@@ -1,4 +1,3 @@
 ﻿  Chapter5.cpp
-d:\learnprogramminglanguage\cppgit\cpp_course\learningcpp\learningcpp\chapter5.cpp(290): warning C4244: 'initializing': conversion from 'float' to 'clock_t', possible loss of data
   LearningCpp.vcxproj -> D:\LearnProgrammingLanguage\CppGit\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.exe
   LearningCpp.vcxproj -> D:\LearnProgrammingLanguage\CppGit\Cpp_Course\LearningCpp\x64\Debug\LearningCpp.pdb (Full PDB)

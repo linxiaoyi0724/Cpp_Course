@@ -279,23 +279,111 @@ int main()
 
 
 
+
+/*
 #include <iostream>
 #include <ctime>
 using namespace std;
 int main()
 {
-	cout << "Enter the delay time in seconds:";
-	float seconds;
-	cin >> seconds;
-	clock_t delay = seconds * CLOCKS_PER_SEC;
-	cout << "Starting" << endl;
+	cout << "Enter the delay time: " << endl;
+	float secs;
+	cin >> secs;
+	clock_t delay = secs * CLOCKS_PER_SEC;
 	clock_t start = clock();
 	while (clock() - start < delay)
 	{
 		;
+
 	}
-	cout << "Done!" << endl;
+	cout << "Done" << endl;
 	return 0;
 }
+*/
 
 
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Enter my favorite number:" << endl;
+	float number;
+	do
+	{
+		cin >> number;
+	} while (number!=7);
+	cout << "Right, my favorite number is " << number << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	int count = 0;
+	char ch;
+	cout << "Enter characters; enter # to quit" << endl;
+	cin >> ch;
+	while (ch != '#')
+	{
+		cout << ch;
+		++count;
+		cin >> ch;
+	}
+	cout << endl << count << " characters read \n";
+	return 0;
+}
+*/
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	int count = 0;
+	char ch;
+	cout << "Enter characters; enter # to quit" << endl;
+	cin.get(ch);
+	while (ch!='#')
+	{
+		cout << ch;
+		++count;
+		cin.get(ch);
+	}
+	cout << endl << count << "characters to read! " << endl;
+	return 0;
+}
+*/
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int count = 0;
+	char ch;
+	cin.get(ch);
+	while (cin.fail() == false)
+	{
+		cout << ch;
+		++count;
+		cin.get(ch);
+	}
+	cout << endl << count << "characters to read!" << endl;
+	return 0;
+}
