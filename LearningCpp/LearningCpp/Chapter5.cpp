@@ -1,4 +1,4 @@
-#include "stdafx.h"
+﻿#include "stdafx.h"
 /*
 #include <iostream>
 using namespace std;
@@ -371,6 +371,7 @@ int main()
 
 
 
+/*
 #include <iostream>
 using namespace std;
 int main()
@@ -387,3 +388,110 @@ int main()
 	cout << endl << count << "characters to read!" << endl;
 	return 0;
 }
+*/
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	int ch;
+	int count = 0;
+	while ((ch = cin.get()) != EOF)
+	{
+		cout.put(char(ch));
+		++count;
+	}
+	cout << endl << count << " characters read\n";
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+const int City = 5;
+const int Year = 4;
+int main()
+{
+	const char* cities[City] = {
+		"beijing",
+		"shanghai",
+		"chongqin",
+		"tianjin",
+		"xianggang"
+	};
+
+	int MaximumTemp[Year][City] = {
+		{1,2,3,4,5},
+		{6,7,8,9,10},
+		{11,12,13,14,15},
+		{16,17,18,19,20}
+	};
+
+	cout << "The Maximum temperatures: " << "\n\n";
+	for (int city = 0; city < City; ++city)
+	{
+		cout << cities[city] << ":\t";
+		for (int year = 0; year < Year; ++year)
+		{
+			cout << MaximumTemp[year][city] << "\t";
+		}
+		cout << endl;
+	}
+	return 0;
+}
+*/
+
+
+
+
+/*
+1. 入口循环条件是指在先判断循环条件是否为真，如果循环条件为false,它将不进行循环。
+   出口循环条件是指先进行循环后判断循环条件是否为真，哪怕循环条件为假，它也会循环一次。
+   for 和 while 都属于入口循环条件，
+   do while 属于出口循环条件。
+
+2. 01234
+
+3. 0369
+   12
+
+4. 68
+
+5. k = 8
+
+
+
+6. 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num = 1;
+	while (num <=64)
+	{
+		cout << num << endl;
+		num *= 2;
+	}
+	return 0;
+}
+
+7.    用{}
+
+8  第一个有效， 第二个y = 1;
+
+9  cin>>ch 会自动忽略空格逗号之类的。
+   cin.get(ch) 和 ch= cin.get() 会读取逗号跟空格之类的字符。
+
+*/
