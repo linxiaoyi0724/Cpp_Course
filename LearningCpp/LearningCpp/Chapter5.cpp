@@ -495,3 +495,7 @@ int main()
    cin.get(ch) 和 ch= cin.get() 会读取逗号跟空格之类的字符。
 
 */
+
+
+
+
