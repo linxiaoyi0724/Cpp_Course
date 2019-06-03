@@ -172,3 +172,95 @@ int main()
 	return 0;
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+const char* qualify[4] =
+{
+	"10, 000-meter race.\n",
+	"mud tug-of-war. \n",
+	"masters canoe jousting.\n",
+	"pie-throwing festival.\n"
+};
+
+int main()
+{
+	int age;
+	cout << "please input your age:";
+	cin >> age;
+	int index;
+	if (age > 17 && age <= 35)
+	{
+		index = 0;
+	}
+	else if (age > 35 && age <= 50)
+	{
+		index = 1;
+	}
+	else if (age > 50 && age < 65)
+	{
+		index = 2;
+	}
+	else
+	{
+		index = 3;
+	}
+	cout << "Your qualtify is " << qualify[index] << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+bool is_int(double n);
+int main()
+{
+	double num;
+	cout << "Yo, dude! Enter an integer value: ";
+	cin >> num;
+	while (!is_int(num))
+	{
+		cout << "Out of range -- please try again: ";
+		cin >> num;
+	}
+	int value = int(num);
+	cout << "You've entered the integer " << value << endl;
+	return 0;
+}
+
+bool is_int(double n)
+{
+	if (n >= INT_MIN && n <= INT_MAX)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+*/
+
+
+
+
