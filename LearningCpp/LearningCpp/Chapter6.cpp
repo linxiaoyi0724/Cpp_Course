@@ -264,3 +264,215 @@ bool is_int(double n)
 
 
 
+
+
+
+
+
+
+/*
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main()
+{
+	cout << "Enter text for analysis, and type @ to terminate input." << endl;
+	char ch;
+	int chNum = 0;
+	int spaceNum = 0;
+	int digisNum = 0;
+	int punctNum = 0;
+	int otherNum = 0;
+	cin.get(ch);
+	while (ch != '@')
+	{
+		if (isalpha(ch))
+		{
+			chNum++;
+		}
+		else if (isspace(ch))
+		{
+			spaceNum++;
+		}
+		else if (isdigit(ch))
+		{
+			digisNum++;
+		}
+		else if (ispunct(ch))
+		{
+			punctNum++;
+		}
+		else
+		{
+			otherNum++;
+		}
+		cin.get(ch);
+	}
+	cout << chNum << " letters, " << spaceNum << " whitespace, " << digisNum << " digits, " << punctNum << " punctuations, " << otherNum << " others." << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Enter two numbers: ";
+	int a, b;
+	cin >> a >> b;
+	int c = a > b ? a : b;
+	cout << "The larger of " << a << " and " << b << " is " << c << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+void showMenu();
+void report();
+void comfort();
+void alibi();
+int main()
+{
+	int option;
+	showMenu();
+	cin >> option;
+	while (option != 5)
+	{
+		switch (option)
+		{
+		case 1:
+			cout << "\a\n";
+			break;
+		case 2:
+			report();
+			break;
+		case 3:
+			alibi();
+			break;
+		case 4:
+			comfort();
+			break;
+		default:
+			cout << "That's not a choice." << endl;
+			break;
+		}
+		showMenu();
+		cin >> option;
+	}
+	cout << "Bye!" << endl;
+	return 0;
+}
+
+void showMenu()
+{
+	cout << "Please enter 1, 2, 3, 4, or 5: " << endl;
+	cout << "1) alarm           2) report" << endl;
+	cout << "3) alibi           4) comfort" << endl;
+	cout << "5) quit" << endl;
+}
+
+void report()
+{
+	cout << "It' been an excellent week for business." << endl;
+	cout << "Sales are up 120%. Expenses are down 35%." << endl;
+}
+
+void alibi()
+{
+	cout << "The boss was in all day." << endl;
+}
+
+void comfort()
+{
+	cout << "Your employees think you are the finest CEO" << endl;
+	cout << "in the industry. The board of directors think" << endl;
+	cout << "you are the finest CEO in the indystry." << endl;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	enum { red , orange, yellow, green, blue, violet, indigo };
+	int code;
+	cout << "Enter color code (0-6): ";
+	cin >> code;
+	while (code >= red && code <= indigo)
+	{
+		switch (code)
+		{
+		case red:
+			cout << "Her lips were red." << endl;
+			break;
+		case orange:
+			cout << "Her hair was orange." << endl;
+			break;
+		case yellow:
+			cout << "Her shoes were yellow." << endl;
+			break;
+		case green:
+			cout << "Her nails were green." << endl;
+			break;
+		case blue:
+			cout << "Her nails were green." << endl;
+			break;
+		case violet:
+			cout << "Her eyes were violet." << endl;
+			break;
+		case indigo:
+			cout << "Her mood was indigo." << endl;
+			break;
+		}
+		cout << "Enter color code (0-6):";
+		cin >> code;
+	}
+	cout << "Bye" << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
