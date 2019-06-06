@@ -473,6 +473,127 @@ int main()
 
 
 
+/*
+#include <iostream>
+using namespace std;
+const int ArSize = 80;
+int main()
+{
+	char ch[ArSize];
+	int space = 0;
+	cout << "Enter a line of text:" << endl;
+	cin.get(ch, ArSize);
+	cout << "Complete line: " << endl << ch << endl;
+	cout << "Line through first period:" << endl;
+	for (int i = 0; ch[i] != '\0'; i++)
+	{
+		cout << ch[i];
+		if (ch[i] == '.')
+			break;
+		if (ch[i] != ' ')
+			continue;
+		space++;
+	}
+	cout << endl << space << " spaces" << endl;
+	cout << "Done." << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+const int MaxNum = 5;
+int main()
+{
+	cout << "Please enter the weights of your fish." << endl;
+	cout << "You may enter up to " << MaxNum << " fish <q to terminate>." << endl;
+	double fish[MaxNum];
+	int i = 0;
+	cout << "fish #1: ";
+	while (i <MaxNum && cin >> fish[i])
+	{
+		if (++i < MaxNum)
+		{
+			cout << "fish #" << i << ": ";
+		}
+	}
+
+	double total = 0;
+	for (int j = 0; j < i; j++)
+	{
+		total += fish[j];
+	}
+
+	if (i == 0)
+	{
+		cout << "No fish. " << endl;
+	}
+	else
+	{
+		double average = total / i;
+		cout << average << " = avergae weight of " << i << " fish " << endl;
+	}
+	cout << "Done." << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+const int MaxNum = 5;
+int main()
+{
+	double scores[MaxNum];
+	cout << "Please enter your golf scores." << endl;
+	cout << "You must enter " << MaxNum << " rounds." << endl;
+	for (int i = 0; i < MaxNum; i++)
+	{
+		cout << "round #" << i << ": ";
+		while (!(cin>>scores[i]))
+		{
+			cin.clear();
+			while (cin.get()!= '\n')
+			{
+				continue;
+			}
+			cout << "Please enter a number: ";
+		}
+	}
+	double total = 0;
+	for (int j = 0; j < MaxNum; j++)
+	{
+		total += scores[j];
+	}
+	double average = total / MaxNum;
+	cout << average << " = average score " << MaxNum << " rounds." << endl;
+	return 0;
+}
+*/
+
+
+
+
 
 
 
