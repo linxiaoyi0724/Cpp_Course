@@ -595,5 +595,105 @@ int main()
 
 
 
+/*
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main()
+{
+	int year;
+	char autoMobile[98];
+	double aPrice;
+	double dPrice;
+
+	cout << "Enter the make and model of automobile: ";
+	cin.get(autoMobile, 98);
+	cout << "Enter the model year: ";
+	cin >> year;
+	cout << "Enter the original asking price: ";
+	cin >> aPrice;
+	dPrice = 1.93 * aPrice;
+
+	cout.precision(2);
+	cout.setf(ios_base::fixed, ios_base::floatfield);
+	cout << "Make and model: " << autoMobile << endl;x
+	cout << "Year: " << year << endl;
+	cout << "Was asking $" << aPrice << endl;
+	cout << "Now asking $" << dPrice << endl;
+
+	ofstream outFile;
+	outFile.open("xiaoyi.txt");
+	outFile.setf(ios_base::fixed, ios_base::floatfield);
+	outFile.precision(2);
+	outFile << "Make and model: " << autoMobile << endl;
+	outFile << "Year: " << year << endl;
+	outFile << "Was asking $" << aPrice << endl;
+	outFile  << "Now asking $" << dPrice << endl;
+	outFile.close();
+	return 0;
+}
+*/
 
 
+
+
+
+
+
+
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+const int SIZE = 80;
+using namespace std;
+int main()
+{
+	char fileName[SIZE];
+	cout << "Enter name of data file: ";
+	cin.get(fileName, SIZE);
+
+	fstream fileIn;
+	fileIn.open(fileName);
+	if (!fileIn.is_open())
+	{
+		cout << "Can't open the file." << endl;
+		cout << "terminate do'nt run." << endl;
+		exit(EXIT_FAILURE);
+	}
+
+	double value;
+	double count = 0;
+	double total = 0;
+
+	do {
+		fileIn >> value;
+		count++;
+		total += value;
+	} while (fileIn.good());
+
+	if (fileIn.eof())
+	{
+		cout << "File reach to end." << endl;
+	}
+	else if (fileIn.fail())
+	{
+		cout << "Read data do't mismatch." << endl;
+	}
+	else
+	{
+		cout << "Process is fail." << endl;
+	}
+
+	if (count == 0)
+	{
+		cout << "no data. ";
+	}
+	else
+	{
+		cout << "Items read: " << count << endl;
+		cout << "Sum: " << total <<endl;
+		cout << "Average: " << total / count <<endl;
+	}
+	fileIn.close();
+	return 0;
+}
