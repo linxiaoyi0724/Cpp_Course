@@ -640,7 +640,7 @@ int main()
 
 
 
-
+/*
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -697,3 +697,60 @@ int main()
 	fileIn.close();
 	return 0;
 }
+*/
+
+
+
+
+
+/*
+1.第二个好在如果if(ch == ' ')条件为真时，就不必再去判断if(ch == '\n')
+
+2.ch+1是Int类型，输出的是数字
+
+3.H$i$!$ S$e$n$d$ $ ct1 = 9, ct2 = 9;
+
+4. a.  weight >= 115 && weight < 125;
+   b.  ch == 'q' || ch == 'Q';
+   c.  x % 2 == 0 && x != 26;
+   d.  x % 2 == 0 && x % 26 != 0;
+   e.  (donation >= 1000 && donation <= 2000) || (guest == 1);
+   f.  isalpha(ch) == "true";
+
+   5. 不一定
+
+   6. if (x > 0)
+	      x = x;
+	  else
+		  x = -x;
+
+   7
+	   switch(ch)
+		   case 'A':
+			   a_grade++;
+			   break;
+		   case 'B':
+			   b_grade++;
+			   break;
+		   case 'C':
+			   c_grade++;
+			   break;
+		   case 'D':
+			   d_grade++;
+			   break;
+		   default:
+			   f_grdae++;
+
+
+    8.  见名知意
+
+	9.
+	    char ch;
+	    while (cin.get(ch) != 'Q')
+	    {
+			if (ch == '\n')
+				line++;
+		}
+
+
+		*/
