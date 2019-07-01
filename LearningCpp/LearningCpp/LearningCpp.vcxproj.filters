@@ -59,6 +59,12 @@
     <ClCompile Include="Chapter6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExtraUsage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LearningCpp.rc">

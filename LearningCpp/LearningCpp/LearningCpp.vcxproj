@@ -157,6 +157,8 @@
     <ClCompile Include="Chapter4.cpp" />
     <ClCompile Include="Chapter5.cpp" />
     <ClCompile Include="Chapter6.cpp" />
+    <ClCompile Include="Chapter7.cpp" />
+    <ClCompile Include="ExtraUsage.cpp" />
     <ClCompile Include="LearningCpp.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
